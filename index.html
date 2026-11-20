@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OVER-LOUD — Voice Synthesis Development Circle</title>
+  <meta name="description" content="OVER-LOUD is a voice synthesis development circle dedicated to creating and releasing original projects.">
+  <meta name="theme-color" content="#060608">
+
+  <script>document.documentElement.classList.add('js', 'is-intro');</script>
+  <link rel="preload" href="assets/fonts/Montserrat-VF.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="intro" id="intro" role="presentation">
+    <video class="intro__video" id="intro-video" src="assets/intro.mp4"
+           autoplay muted playsinline preload="auto" tabindex="-1"
+           disablepictureinpicture disableremoteplayback aria-hidden="true"></video>
+    <button class="intro__skip" id="intro-skip" type="button">SKIP</button>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#home" data-scroll aria-label="OVER-LOUD — back to top" data-i18n-aria="brandAria">
+      <img src="assets/overloud_logo.png" alt="OVER-LOUD" width="1750" height="382">
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main" data-i18n-aria="navAria">
+      <a href="#home" data-scroll data-i18n="home">Home</a>
+      <a href="#about" data-scroll data-i18n="about">About</a>
+      <a href="#projects" data-scroll data-i18n="projects">Projects</a>
+      <a href="#team" data-scroll data-i18n="team">Team</a>
+      <a href="#news" data-scroll data-i18n="news">News</a>
+      <a href="#terms" data-scroll data-i18n="terms">Terms</a>
+      <a class="nav__cta nav__cta--mobile" href="mailto:inquiry@over-loud.com" data-contact><span data-i18n="contact">CONTACT</span> <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </nav>
+
+    <div class="header__tools">
+      <div class="lang-toggle" role="group" aria-label="Language" data-i18n-aria="langAria">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+
+      <a class="nav__cta nav__cta--desktop" href="mailto:inquiry@over-loud.com" data-contact>
+        <span data-i18n="contact">CONTACT</span>
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-label="Introduction">
+      <div class="hero__frame">
+        <video class="hero__video" src="assets/home_page_video.mp4" poster="assets/home_poster.jpg"
+               autoplay muted loop playsinline preload="auto" tabindex="-1"
+               disablepictureinpicture disableremoteplayback
+               controlslist="nodownload nofullscreen noremoteplayback"
+               aria-hidden="true"></video>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__inner">
+        <figure class="about__visual">
+          <div class="about__frame">
+            <img src="assets/about.png" alt="ERIEL, an OVER-LOUD character" data-i18n-alt="aboutImgAlt" loading="lazy">
+          </div>
+        </figure>
+
+        <div class="about__text">
+          <h2 class="h-display about__title" data-i18n="aboutTitle">About <span class="nw">OVER-LOUD</span></h2>
+
+          <p class="about__lead" data-i18n="aboutLead">OVER-LOUD is a voice synthesis development circle dedicated to creating and releasing original projects.</p>
+          <p class="about__body" data-i18n="aboutP1">We operate and develop a range of our own voicebanks, characters, and tools, with a special emphasis on detail and artistry behind the scenes.</p>
+          <p class="about__body" data-i18n="aboutP2">We treat each project as a complete creative work. Every phoneme is carefully considered, our characters are designed with intention and every release is polished until it meets our standards. We believe synthesized voices deserve the same craft and care as any other form of musical and artistic expression.</p>
+
+          <p class="about__body" data-i18n="aboutGoal">Our goal is to build voices that sound natural, carry personality, and give creators new ways to bring their ideas to life.</p>
+          <hr class="deco-line deco-line--dark reveal">
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="wrap">
+        <div class="title-row--between">
+          <h2 class="h-display h-grad h-bullet" data-i18n="projects">Projects</h2>
+          <div class="arrows" role="group" aria-label="Projects navigation" data-i18n-aria="projectsNav">
+            <button class="arrow" type="button" data-arrow="prev" data-for="projects-track" aria-label="Previous projects" data-i18n-aria="prevProjects"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+            <button class="arrow" type="button" data-arrow="next" data-for="projects-track" aria-label="Next projects" data-i18n-aria="nextProjects"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+        <div class="crescendo" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="hscroll" id="projects-track" tabindex="0" aria-label="Projects" data-i18n-aria="projectsTrack"></div>
+    </section>
+
+    <section class="team" id="team">
+      <div class="team__bg" id="team-bg" aria-hidden="true"></div>
+      <div class="wrap team__content">
+        <div class="title-row title-row--team">
+          <h2 class="h-display h-bullet h-white" data-i18n="team">Team</h2>
+        </div>
+        <hr class="deco-line deco-line--light deco-line--full reveal">
+
+        <ul class="team__grid" id="team-grid"></ul>
+
+        <p class="team__desc" data-i18n="teamDesc">The OVER-LOUD team is made up of experienced people from the vocal synthesis scene, including tuners, developers, and artists. Together we build the projects we want to see exist.</p>
+      </div>
+    </section>
+
+    <section class="news" id="news">
+      <div class="wrap">
+        <div class="title-row">
+          <h2 class="h-display h-grad h-bullet" data-i18n="news">News</h2>
+          <hr class="deco-line deco-line--light reveal">
+          <div class="arrows" role="group" aria-label="News navigation" data-i18n-aria="newsNav">
+            <button class="arrow" type="button" data-arrow="prev" data-for="news-track" aria-label="Previous news" data-i18n-aria="prevNews"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+            <button class="arrow" type="button" data-arrow="next" data-for="news-track" aria-label="Next news" data-i18n-aria="nextNews"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+        <div class="news-search">
+          <svg class="news-search__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input class="news-search__input" id="news-search" type="search" autocomplete="off" spellcheck="false"
+                 placeholder="Search news..." aria-label="Search news" data-i18n-placeholder="searchPlaceholder" data-i18n-aria="searchAria">
+          <button class="news-search__clear" id="news-search-clear" type="button" aria-label="Clear search" data-i18n-aria="clearSearch" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="hscroll hscroll--news" id="news-track" tabindex="0" aria-label="News" data-i18n-aria="newsTrack"></div>
+    </section>
+
+    <section class="terms" id="terms">
+      <div class="wrap">
+        <button class="license-card" id="license-open" type="button" aria-haspopup="dialog">
+          <span class="h-display h-bullet h-white license-card__title" data-i18n="licenseTitle">License Agreements</span>
+          <span class="license-card__cta">
+            <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 15v3a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-3"/></svg>
+            <span data-i18n="downloadNow">Download Now...</span>
+          </span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <div class="site-footer__brand">
+        <img class="site-footer__logo" src="assets/overloud_footer_logo.png" alt="OVER-LOUD" width="1750" height="382">
+        <ul class="socials">
+          <li>
+            <a href="https://x.com/its_overloud" target="_blank" rel="noopener">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a href="#" data-placeholder target="_blank" rel="noopener">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><path d="M9.75 15.02l5.75-3.27-5.75-3.27z"/></svg>
+              YouTube
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="copyright" data-i18n="copyright">© 2026 OVER-LOUD. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="modal" aria-labelledby="modal-title">
+    <div class="modal__panel">
+      <button class="modal__close" id="modal-close" type="button" aria-label="Close" data-i18n-aria="close">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="modal__body" id="modal-body"></div>
+    </div>
+  </dialog>
+
+  <script type="text/plain" id="license-text">OVER-LOUD — GENERAL LICENSE AGREEMENT
+what u looking for
+
+© OVER-LOUD. All rights reserved.
+</script>
+
+  <script type="text/plain" id="license-text-es">OVER-LOUD — ACUERDO GENERAL DE LICENCIA
+keases aki
+
+© OVER-LOUD. Todos los derechos reservados.
+</script>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/posts.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
