@@ -6,7 +6,7 @@ const TEAM = [
   { name: "Lili",   role: "Developer and co-creator.", role_es: "Desarrollo y co-creación.",                  photo: "assets/lili_team_picture.jpg",   x: "https://x.com/liliquisha" },
   { name: "Owen",   role: "Tools developer", role_es: "Desarrollo de herramientas.",                            photo: "assets/owen_team_picture.jpg",   x: "https://x.com/itowenmatcha" },
   { name: "Rampie", role: "General development assistant.", role_es: "Asistencia general de desarrollo.",             photo: "assets/rampie_team_picture.jpg", x: "https://x.com/Rampieeeee" },
-  { name: "Kori",   role: "Character designer.", role_es: "Diseño de personajes.",                        photo: "assets/kori_team_picture.jpg",                            x: null },
+  { name: "Cam",   role: "Character designer.", role_es: "Diseño de personajes.",                        photo: "assets/cam_team_picture.jpg",                            x: null },
 
 ];
 
@@ -43,6 +43,7 @@ function armPop() {
 
 const STAR_ICON = '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#3b00e0"/><path fill="#fff" d="M10 4.6l1.5 3.3 3.6.4-2.7 2.4.8 3.5L10 12.4l-3.2 1.8.8-3.5L4.9 8.3l3.6-.4z"/></svg>';
 const BIRD_ICON = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>';
+const MIC_ICON = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></svg>';
 const DL_ICON = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 15v3a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-3"/></svg>';
 
 const SUPPORTED_LANGS = ["en", "es"];
@@ -148,7 +149,7 @@ function renderNews() {
     ? rows.map(({ raw, i }) => { const n = loc(raw); return `
     <button class="news-card" type="button" data-news="${i}" aria-label="${esc(n.title)} — ${t("readMore")}">
       <span class="news-card__media">${imgOrBlank(n.image, n.title)}</span>
-      <span class="news-card__title">${esc(n.title)}</span>
+      <span class="news-card__head"><span class="news-card__title">${esc(n.title)}</span>${n.tag ? `<span class="chip news-card__tag">${esc(n.tag)}</span>` : ""}</span>
       <span class="news-card__text">${esc(excerptOf(n))}</span>
     </button>`; }).join("")
     : `<p class="news-empty" role="status">${esc(t("noResults"))} “${esc(newsQuery.trim())}”</p>`;
@@ -190,7 +191,7 @@ function targetY(el) {
   if (el.id === "home") return 0;
   const base = Math.max(0, Math.round(el.getBoundingClientRect().top + window.scrollY - header.offsetHeight));
   if (el.id === "about") return Math.max(0, base - Math.round(header.offsetHeight * 0.5));
-  if (el.id !== "news") return base;
+  if (el.id !== "blog") return base;
   const head = el.querySelector(".title-row, .wrap");
   const cards = el.querySelectorAll(".news-card, .news-empty");
   if (!head || !cards.length) return base;
@@ -238,7 +239,7 @@ burger.addEventListener("click", () => {
 });
 window.addEventListener("resize", () => { if (window.innerWidth > 1040) closeMenu(); });
 
-const sections = ["home", "about", "projects", "team", "news", "terms"].map((id) => $("#" + id));
+const sections = ["home", "about", "projects", "team", "blog", "terms"].map((id) => $("#" + id));
 const links = new Map($$(".nav a[data-scroll]").map((a) => [a.getAttribute("href").slice(1), a]));
 function updateActive() {
   const probe = header.offsetHeight + window.innerHeight * 0.3;
@@ -384,8 +385,11 @@ document.addEventListener("click", (e) => {
       <div class="proj-head">
         <div class="proj-head__cover">${imgOrBlank(p.image, p.title)}</div>
         <div class="proj-head__info">
-          <h3 id="modal-title">${esc(p.title)}</h3>
-          <div class="modal__meta"><span class="chip">${esc(p.type)}</span><span class="chip chip--ghost">${esc(p.status)}</span></div>
+          <div class="proj-title">
+            <h3 id="modal-title">${esc(p.title)}</h3>
+            ${p.voice ? `<span class="chip chip--voice">${MIC_ICON}${p.voice_link ? `<a href="${esc(p.voice_link)}" target="_blank" rel="noopener noreferrer">${esc(p.voice)}</a>` : `<span>${esc(p.voice)}</span>`}</span>` : ""}
+          </div>
+          <div class="modal__meta"><span class="chip chip--ghost">${esc(p.type)}</span><span class="chip chip--ghost">${esc(p.status)}</span></div>
         </div>
       </div>
       <div class="proj-content">

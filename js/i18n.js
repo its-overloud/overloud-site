@@ -5,7 +5,7 @@ const I18N = {
     brandAria: "OVER-LOUD — back to top",
     navAria: "Main",
     langAria: "Language",
-    home: "Home", about: "About", projects: "Projects", team: "Team", news: "News", terms: "Terms",
+    home: "Home", about: "About", projects: "Projects", team: "Team", news: "Blog", terms: "Terms",
     contact: "CONTACT",
     contactTitle: "Get in touch",
     contactIntro: "Questions, collaborations or licensing? Send us a message and we'll reply by email.",
@@ -28,10 +28,10 @@ const I18N = {
     aboutGoal: "Our goal is to build voices that sound natural, carry personality, and give creators new ways to bring their ideas to life.",
 
     projectsNav: "Projects navigation", prevProjects: "Previous projects", nextProjects: "Next projects", projectsTrack: "Projects",
-    newsNav: "News navigation", prevNews: "Previous news", nextNews: "Next news", newsTrack: "News",
+    newsNav: "Blog navigation", prevNews: "Previous posts", nextNews: "Next posts", newsTrack: "Blog",
     teamDesc: "The OVER-LOUD team is made up of experienced people from the vocal synthesis scene, including tuners, developers, and artists. Together we build the projects we want to see exist.",
 
-    searchPlaceholder: "Search news...", searchAria: "Search news", clearSearch: "Clear search", noResults: "No news found for",
+    searchPlaceholder: "Search blog...", searchAria: "Search blog", clearSearch: "Clear search", noResults: "No posts found for",
 
     licenseTitle: "License Agreements",
     downloadNow: "Download Now...",
@@ -57,7 +57,7 @@ const I18N = {
     brandAria: "OVER-LOUD — volver arriba",
     navAria: "Principal",
     langAria: "Idioma",
-    home: "Inicio", about: "Nosotros", projects: "Proyectos", team: "Equipo", news: "Noticias", terms: "Términos",
+    home: "Inicio", about: "Nosotros", projects: "Proyectos", team: "Equipo", news: "Blog", terms: "Términos",
     contact: "CONTACTO",
     contactTitle: "Contáctanos",
     contactIntro: "¿Preguntas, colaboraciones o licencias? Envíanos un mensaje y te responderemos por correo.",
@@ -80,10 +80,10 @@ const I18N = {
     aboutGoal: "Nuestro objetivo es crear voces que suenen naturales, tengan personalidad y den a los creadores nuevas formas de dar vida a sus ideas.",
 
     projectsNav: "Navegación de proyectos", prevProjects: "Proyectos anteriores", nextProjects: "Proyectos siguientes", projectsTrack: "Proyectos",
-    newsNav: "Navegación de noticias", prevNews: "Noticias anteriores", nextNews: "Noticias siguientes", newsTrack: "Noticias",
+    newsNav: "Navegación del blog", prevNews: "Entradas anteriores", nextNews: "Entradas siguientes", newsTrack: "Blog",
     teamDesc: "El equipo de OVER-LOUD está formado por gente con experiencia en la escena de la síntesis vocal, incluyendo tuners, desarrolladores y artistas. Juntos construimos los proyectos que queremos ver existir.",
 
-    searchPlaceholder: "Buscar noticias...", searchAria: "Buscar noticias", clearSearch: "Borrar búsqueda", noResults: "No se encontraron noticias para",
+    searchPlaceholder: "Buscar en el blog...", searchAria: "Buscar en el blog", clearSearch: "Borrar búsqueda", noResults: "No se encontraron entradas para",
 
     licenseTitle: "Acuerdos de Licencia",
     downloadNow: "Descargar ahora...",

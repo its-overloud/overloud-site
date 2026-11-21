@@ -30,7 +30,7 @@
       <a href="#about" data-scroll data-i18n="about">About</a>
       <a href="#projects" data-scroll data-i18n="projects">Projects</a>
       <a href="#team" data-scroll data-i18n="team">Team</a>
-      <a href="#news" data-scroll data-i18n="news">News</a>
+      <a href="#blog" data-scroll data-i18n="news">Blog</a>
       <a href="#terms" data-scroll data-i18n="terms">Terms</a>
       <a class="nav__cta nav__cta--mobile" href="mailto:inquiry@over-loud.com" data-contact><span data-i18n="contact">CONTACT</span> <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </nav>
@@ -114,26 +114,26 @@
       </div>
     </section>
 
-    <section class="news" id="news">
+    <section class="news" id="blog">
       <div class="wrap">
         <div class="title-row">
-          <h2 class="h-display h-grad h-bullet" data-i18n="news">News</h2>
+          <h2 class="h-display h-grad h-bullet" data-i18n="news">Blog</h2>
           <hr class="deco-line deco-line--light reveal">
-          <div class="arrows" role="group" aria-label="News navigation" data-i18n-aria="newsNav">
-            <button class="arrow" type="button" data-arrow="prev" data-for="news-track" aria-label="Previous news" data-i18n-aria="prevNews"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-            <button class="arrow" type="button" data-arrow="next" data-for="news-track" aria-label="Next news" data-i18n-aria="nextNews"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+          <div class="arrows" role="group" aria-label="Blog navigation" data-i18n-aria="newsNav">
+            <button class="arrow" type="button" data-arrow="prev" data-for="news-track" aria-label="Previous posts" data-i18n-aria="prevNews"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+            <button class="arrow" type="button" data-arrow="next" data-for="news-track" aria-label="Next posts" data-i18n-aria="nextNews"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
           </div>
         </div>
         <div class="news-search">
           <svg class="news-search__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
           <input class="news-search__input" id="news-search" type="search" autocomplete="off" spellcheck="false"
-                 placeholder="Search news..." aria-label="Search news" data-i18n-placeholder="searchPlaceholder" data-i18n-aria="searchAria">
+                 placeholder="Search blog..." aria-label="Search blog" data-i18n-placeholder="searchPlaceholder" data-i18n-aria="searchAria">
           <button class="news-search__clear" id="news-search-clear" type="button" aria-label="Clear search" data-i18n-aria="clearSearch" hidden>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
           </button>
         </div>
       </div>
-      <div class="hscroll hscroll--news" id="news-track" tabindex="0" aria-label="News" data-i18n-aria="newsTrack"></div>
+      <div class="hscroll hscroll--news" id="news-track" tabindex="0" aria-label="Blog" data-i18n-aria="newsTrack"></div>
     </section>
 
     <section class="terms" id="terms">
@@ -181,16 +181,646 @@
     </div>
   </dialog>
 
-  <script type="text/plain" id="license-text">OVER-LOUD — GENERAL LICENSE AGREEMENT
-what u looking for
+  <script type="text/plain" id="license-text">OVER-LOUD — LICENSE AGREEMENTS
 
-© OVER-LOUD. All rights reserved.
+Characters, Voice Databases and Tools
+
+Version 1.0 · 20-11-2026
+
+Licensor: OVER-LOUD (“OVER-LOUD”, “we”, “us”) Contact: inquiry@over-loud.com · Website: over-loud.com
+
+============================================================
+HOW THESE AGREEMENTS ARE ORGANIZED
+============================================================
+
+This document has four parts. Part 1 (General Terms) applies to everything we publish. Part 2 (Character License), Part 3 (Voice Database License) and Part 4 (Tool License) add rules for each kind of product. If a product falls under more than one part, you must follow all of them. If two parts conflict, the more specific part wins.
+
+By downloading, installing, activating or using any OVER-LOUD product, you agree to these terms. If you do not agree, do not download or use the Product. If you have already downloaded it, delete the Product from your device and stop using it.
+
+============================================================
+PART 1 · GENERAL TERMS
+============================================================
+
+1. Definitions
+
+1.1 “Product” means any Character, Voice Database or Tool published by OVER-LOUD, together with its documentation, artwork, readme files and updates.
+
+1.2 “Character” means a fictional persona created or published by OVER-LOUD, including its name, personality, backstory, design, artwork, logos and all related visual and written materials (for example, ERIEL).
+
+1.3 “Voice Database” means a set of data, models, configuration files and related materials that allows a compatible synthesis engine to generate a singing or speaking voice, including any DiffSinger-based database.
+
+1.4 “Tool” means any software, plugin, script, utility, template or resource published by OVER-LOUD that is not a Character or a Voice Database.
+
+1.5 “Voice Provider” means the person whose voice was recorded to create a Voice Database.
+
+1.6 “Output” means audio, video or other content generated using a Voice Database or Tool, such as a song, a vocal track or a rendered clip.
+
+1.7 “Derivative Work” means any work based on a Character, such as fan art, animation, a model, a story or a game, other than Output.
+
+1.8 “Commercial Use” means any use intended to generate revenue or other direct financial benefit, including selling or monetizing Output, releasing it on streaming or video platforms with monetization enabled, or using it in paid productions, advertising, games, apps or services.
+
+1.9 “Non-Commercial Use” means any use that is not Commercial Use.
+
+1.10 “You” means the individual or organization that accepts this agreement. If you accept on behalf of an organization, you confirm that you have authority to bind it.
+
+1.11 “AI Training” means using any material to train, fine-tune, distill, evaluate for replication, or otherwise build a machine-learning model, including voice cloning, voice conversion, text-to-speech and generative audio or image models.
+
+2. Ownership and reserved rights
+
+2.1 OVER-LOUD (and, where applicable, its licensors) owns all rights, title and interest in every Product, including copyright, trademark, design and related rights. Products are licensed, not sold.
+
+2.2 The Voice Provider keeps their personality and voice rights. Nothing in this agreement transfers or assigns any right in the Voice Provider’s real voice or identity to you.
+
+2.3 All rights not expressly granted are reserved. Nothing in this agreement grants you any right to use OVER-LOUD’s name, logos or trademarks except as stated here.
+
+2.4 You own your Output. As between you and OVER-LOUD, you own the compositions, lyrics, arrangements and recordings you create. OVER-LOUD does not claim ownership of your music. However, the underlying voice, Voice Database and Character remain ours, and your ownership does not permit you to extract, isolate or redistribute them.
+
+3. Scope of use
+
+Unless a product page or license file states otherwise, one license covers both personal and commercial use of Output, as described in the part of this agreement that applies to the Product. Each license is for one user.
+
+Some uses need a separate written agreement with OVER-LOUD, such as real-time or interactive use, large-scale productions and merchandise. If you are unsure whether your use is covered, contact inquiry@over-loud.com before using the Product.
+
+4. General grant
+
+4.1 Subject to these terms OVER-LOUD grants you a non-exclusive worldwide license to use the Product for the purposes allowed by the specific part of this agreement that applies to that Product.
+
+5. Prohibited conduct (all Products)
+
+You may not, and may not allow anyone else to:
+
+• Redistribute, share, resell, rent, lease, lend, upload, mirror or otherwise make a Product or any part of it available to third parties, whether free or paid, except where a part of this agreement expressly allows it.
+
+• Reverse engineer, decompile, decrypt, extract, convert or repackage a Product, or any data inside it. Reverse engineering includes viewing the models to see internal graphs so that they may be used for another implementation, emulation or recreation. This includes, but is not limited to, OVER-LOUD’s reworked parameters, new parameters, model process modifications or any future implementations.
+
+• Remove or alter copyright notices, credits, watermarks or license information.
+
+• Use a Product for AI Training, or use Output as training or reference material for any model whose purpose is to reproduce, imitate or replace the voice or Character of a Product. This includes voice conversion and cloning of the Voice Database or its Output.
+
+• Host a Product on any third-party unlicensed platform. If you wish so, contact us at inquiry@over-loud.com
+
+• Use a Product to impersonate any real person, to create deceptive audio or video (“deepfakes”), or to make it appear that a real person said or sang something they did not.
+
+• Use a Product to create content that is illegal, defamatory, harassing, hateful or discriminatory, that promotes violence, terrorism or self-harm, that exploits or sexualizes minors in any way, or that infringes someone else’s rights.
+
+• Use a Product in a way that suggests OVER-LOUD, a Character or the Voice Provider endorses, sponsors or is affiliated with you, a political party, a candidate, a religion, a cause or a product, unless we have agreed to it in writing.
+
+• Use a Product in connection with cryptocurrencies, NFTs, gambling or similar schemes.
+
+• Make claims that a Product is your own work or that you created the Voice Database, the Character or the voice.
+
+OVER-LOUD may update this list in a new version of the agreement. The version published when you obtained the Product continues to apply to that Product, unless the change is needed to comply with law or to protect the Voice Provider.
+
+6. Credit
+
+6.1 When you publish Output publicly, you must credit the Product in a reasonable and visible place, such as the description, title, the credits or the track notes. The recommended format is:
+
+    Vocals: [Character name] (from OVER-LOUD)
+
+6.2 You do not need to credit the Product in private or internal use.
+
+6.3 Credit is mandatory when you publish Output publicly, unless we agree otherwise in writing.
+
+7. Voice Provider protection
+
+7.1 OVER-LOUD may restrict, suspend or terminate your use of a Product immediately if your use harms the Voice Provider’s reputation, safety, privacy or dignity, or if it is used to harass, impersonate or target them or anyone else.
+
+7.2 You may not attempt to identify, contact or harass the Voice Provider if they have chosen to stay anonymous.
+
+7.3 You may not present Output as the real voice of the Voice Provider in any context where this could mislead people.
+
+8. Updates and support
+
+We may release updates, fixes or new versions, but we are not obliged to. Support is provided on a best-effort basis through inquiry@over-loud.com. We may stop supporting a Product at any time.
+
+9. Term and termination
+
+9.1 This agreement lasts until terminated.
+
+9.2 It ends automatically if you breach it. OVER-LOUD may also terminate it by written notice if you breach it and, where the breach can be fixed, do not fix it within [7] days of our notice.
+
+9.3 You may end it at any time by deleting the Product and all copies.
+
+9.4 When the agreement ends, you must stop using the Product and delete all copies. Output you already published or delivered under a valid license remains valid, unless the termination was caused by content that violates Section 5 or Section 7, in which case we may require you to take it down.
+
+9.5 Sections 2, 5, 7, 10, 11 and 12 survive termination.
+
+10. Disclaimer of warranties
+
+THE PRODUCTS ARE PROVIDED “AS IS” AND “AS AVAILABLE”. TO THE MAXIMUM EXTENT PERMITTED BY LAW, OVER-LOUD DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, QUALITY, ACCURACY AND UNINTERRUPTED OR ERROR-FREE OPERATION. Voice synthesis can produce unexpected or imperfect results, and you are responsible for reviewing your Output before publishing it.
+
+11. Limitation of liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, OVER-LOUD AND ITS MEMBERS, STAFF, VOICE PROVIDERS AND CONTRIBUTORS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, OR FOR LOSS OF PROFITS, REVENUE, DATA OR GOODWILL, ARISING FROM OR RELATED TO THE PRODUCTS OR THIS AGREEMENT. BECAUSE THE PRODUCTS ARE PROVIDED FREE OF CHARGE, OUR TOTAL LIABILITY FOR ANY CLAIM WILL NOT EXCEED USD 0. Some jurisdictions do not allow these limits, so they apply only to the extent the law permits.
+
+11A. Indemnity
+
+You agree to defend and hold harmless OVER-LOUD, its members and the Voice Provider from claims, damages and costs (including reasonable legal fees) arising from your Output, your Derivative Works, or your breach of this agreement.
+
+12. Enforcement and takedowns
+
+We may ask platforms to remove content that violates this agreement, including through copyright and trademark takedown procedures. Report suspected violations to inquiry@over-loud.com.
+
+13. General
+
+13.1 Changes. We may update this agreement. New versions apply to Products you obtain after the update and to your continued use of updates. We will post the version number and date on our website.
+
+13.2 Entire agreement. This agreement, together with any written agreement signed with OVER-LOUD, is the full agreement about the Products.
+
+13.3 Severability. If a clause is unenforceable, the rest remains in effect.
+
+13.4 No waiver. Not enforcing a right is not a waiver of it.
+
+13.5 Assignment. You may not assign this agreement. OVER-LOUD may assign it in connection with a reorganization, a sale of the business or a change in the project’s ownership.
+
+13.6 Language. The English version prevails over any translation.
+
+============================================================
+PART 2 · CHARACTER LICENSE
+============================================================
+
+This part applies to every OVER-LOUD Character, including its name, designs, artwork, personality and story.
+
+2.1 What you can do
+
+You may, free of charge and without asking permission:
+
+• Create and share fan works such as illustrations, comics, animations, 3D models, cosplay, stories, covers and videos, as Non-Commercial Use.
+
+• Use the Character in music made with an official Voice Database of that Character, within the terms of Part 3.
+
+• Post fan works on social media and creative platforms, with the credit in 2.4.
+
+• Receive voluntary tips, donations or platform support related to your fan works, as long as the Character is not sold as the product (for example, no paywalled “exclusive Character content”).
+
+Mature fan works. You may create adult-oriented fan works of the Character, including suggestive or NSFW art and stories, as long as the Character is clearly depicted as an adult, the work is labeled as mature and kept in age-restricted spaces or behind the platform’s content filters, and it does not suggest that OVER-LOUD made or approves it.
+
+2.2 What requires written permission
+
+You must obtain OVER-LOUD’s written permission before:
+
+• Selling or distributing merchandise (prints, apparel, stickers, figures, plushies, accessories, books or any physical or digital goods) featuring the Character.
+
+• Using the Character in commercial games, apps, anime, films, series, advertising, brand partnerships or paid commissions where the Character is the main product.
+
+• Using the Character as an avatar for streaming, VTubing or a virtual-persona service that you monetize or that represents a business.
+
+• Using the Character’s name, logo or likeness as a trademark or business name.
+
+• Creating an official-looking product that could be mistaken as released by OVER-LOUD.
+
+We will review requests in good faith. Contact inquiry@over-loud.com with a description, the use, the audience and the planned revenue.
+
+2.3 What you may not do
+
+You may not:
+
+• Depict the Character in hateful or discriminatory content, in non-consensual sexual content, or in any sexual or sexualized way as a minor or with childlike features. This last rule has no exceptions.
+
+• Depict the Character in a way that mocks, defames or harms the Voice Provider, OVER-LOUD or its members.
+
+• Use the Character to promote political parties, candidates, religious groups, hate groups or movements.
+
+• Claim that you created the Character, that the Character is yours or that your work is canon unless OVER-LOUD says so.
+
+• Use the Character’s designs or lore as AI Training data, and you may not publish Character art generated by an AI model that was trained on or fine-tuned using OVER-LOUD’s Character materials or fan works of the Character without the consent of the artists involved.
+
+• Resell or redistribute OVER-LOUD’s official artwork, reference sheets or press materials, except for non-commercial fan works that clearly use your own artwork.
+
+• Create or sell NFTs or tokens based on the Character.
+
+2.4 Credit for fan works
+
+Where possible, credit the Character as: “[Character name] © OVER-LOUD” or simply by its official name and link to over-loud.com. This credit is optional for casual social posts but recommended.
+
+2.5 Official design and canon
+
+2.5.1 Fan interpretations are welcome, but OVER-LOUD decides what is official. Fan works are not canon unless we publish them as such.
+
+2.5.2 You may not release official redesigns or claim a design is the “new official” version.
+
+2.5.3 You grant OVER-LOUD a non-exclusive, worldwide, royalty-free license to share, repost and display your fan works on our official channels with credit to you. We will remove them if you ask. We will never use your work in a commercial product without your permission.
+
+2.6 Trademark
+
+Character names, logos and the name OVER-LOUD may be registered or unregistered trademarks. This license does not give you any trademark rights.
+
+============================================================
+PART 3 · VOICE DATABASE LICENSE
+============================================================
+
+This part applies to every OVER-LOUD Voice Database, including DiffSinger-based databases such as ERIEL.
+
+3.1 Grant
+
+Subject to Part 1, OVER-LOUD grants you a non-exclusive, non-transferable license to install the Voice Database on your devices and to use it with a compatible synthesis engine to generate Output.
+
+3.2 Permitted uses
+
+You may create and share Output, including songs, covers and videos, and use it commercially, including:
+
+• Releasing songs on streaming platforms and selling them, physically or digitally.
+
+• Monetizing videos and streams that contain Output.
+
+• Using Output in paid commissions, client projects and background music.
+
+• Performing Output at live events, using pre-rendered audio.
+
+Extended use. Uses beyond these, such as productions with large budgets, in-game systems, interactive installations or custom integrations, require a separate written agreement with OVER-LOUD.
+
+3.3 What is not permitted
+
+In addition to Section 5 of Part 1, you may not:
+
+• Extract, isolate, sample, resynthesize or distribute the Voice Database’s raw or derived data, including models, embeddings, vocoder data, configuration or any internal audio.
+
+• Package Output as a sample pack, sound library, loop kit or royalty-free collection, or as a dataset for others to use.
+
+• Run voice conversion or any other model on the Database or its Output to produce a similar voice, or to produce a different voice that is trained on this one.
+
+• Swap components of OVER-LOUD models, such as but not limited to Variance, Timing and Acoustic, with non-OVER-LOUD models. In compliance with the original terms of PC-NSFHiFiGAN published by OpenVPI, we can only ask that you do not use our fine-tuned weights with non-OVER-LOUD models.
+
+• Use the Database in real-time or interactive systems (such as chatbots, assistants, customer service, interactive games with player-generated singing, streaming bots, or text-to-speech services for the public) without a separate written license.
+
+• Create a merged, mixed or derived Voice Database (including model merges, tuned or fine-tuned versions, or voice blends), distribute and use it publicly, without OVER-LOUD’s written permission. Private, non-distributed experiments for your own music are allowed.
+
+• Use the Database to produce content that spreads misinformation or that is intended to deceive people about who is speaking or singing.
+
+• Provide the Database as part of a paid or free service, such as a cloud rendering service, where users can generate Output without owning a license themselves.
+
+3.4 Output rights and our promise
+
+3.4.1 You keep the rights to your original compositions and recordings.
+
+3.4.2 OVER-LOUD will not claim royalties on your Output, and will not file claims against content you made lawfully within this license.
+
+3.5 Engine and third-party components
+
+Voice Databases require a compatible engine (for example, DiffSinger-compatible software such as OpenUtau). Engines and third-party components are licensed separately by their respective owners, and you are responsible for following their terms. OVER-LOUD is not responsible for the engines.
+
+3.6 Responsible use of the voice
+
+We ask you to treat the voice with respect. Output must not be presented as a real person, as a different Character, or in ways that dishonor the Voice Provider.
+
+3.7 No redistribution
+
+You may not host, re-upload or otherwise redistribute any OVER-LOUD Voice Database. Instead, share a link to the official download page at over-loud.com.
+
+============================================================
+PART 4 · TOOL LICENSE
+============================================================
+
+This part applies to every OVER-LOUD Tool, such as plugins, scripts, configuration files, templates, dependencies and utilities.
+
+4.1 Grant
+
+Subject to Part 1, OVER-LOUD grants you a non-exclusive, non-transferable license to install and use the Tool for your own projects, including commercial projects, unless the Tool’s page states otherwise.
+
+4.2 Restrictions
+
+You may not:
+
+• Redistribute, sell or sublicense the Tool or modified versions of it.
+
+• Remove license notices or present the Tool as your own.
+
+• Use the Tool to circumvent protections of other software, to create malware, or to access systems or data without authorization.
+
+• Use the Tool to produce or distribute infringing, leaked or pirated content.
+
+4.3 Modifications
+
+You may modify the Tool for your own private use, but you may not distribute modified versions.
+
+4.4 Compatibility and safety
+
+Tools may modify files and settings in other software. You are responsible for making backups. OVER-LOUD is not responsible for loss of data or incompatibility with other software.
+
+Questions or permission requests: inquiry@over-loud.com
+
+© 2026 OVER-LOUD. All rights reserved.
 </script>
 
-  <script type="text/plain" id="license-text-es">OVER-LOUD — ACUERDO GENERAL DE LICENCIA
-keases aki
+  <script type="text/plain" id="license-text-es">OVER-LOUD — ACUERDOS DE LICENCIA
 
-© OVER-LOUD. Todos los derechos reservados.
+Personajes, bases de datos de voz y herramientas
+
+Versión 1.0 · 20-11-2026
+
+Licenciante: OVER-LOUD (“OVER-LOUD”, “nosotros”, “nos”) Contacto: inquiry@over-loud.com · Sitio web: over-loud.com
+
+============================================================
+CÓMO SE ORGANIZAN ESTOS ACUERDOS
+============================================================
+
+Este documento tiene cuatro partes. La Parte 1 (Términos Generales) se aplica a todo lo que publicamos. La Parte 2 (Licencia de Personajes), la Parte 3 (Licencia de Bases de Datos de Voz) y la Parte 4 (Licencia de Herramientas) añaden reglas para cada tipo de producto. Si un producto entra en más de una parte, debes cumplir con todas. Si dos partes entran en conflicto, prevalece la más específica.
+
+Al descargar, instalar, activar o usar cualquier producto de OVER-LOUD, aceptas estos términos. Si no estás de acuerdo, no descargues ni uses el Producto. Si ya lo descargaste, elimina el Producto de tu dispositivo y deja de usarlo.
+
+============================================================
+PARTE 1 · TÉRMINOS GENERALES
+============================================================
+
+1. Definiciones
+
+1.1 “Producto” significa cualquier Personaje, Base de Datos de Voz o Herramienta publicada por OVER-LOUD, junto con su documentación, ilustraciones, archivos readme y actualizaciones.
+
+1.2 “Personaje” significa un personaje ficticio creado o publicado por OVER-LOUD, incluyendo su nombre, personalidad, historia, diseño, ilustraciones, logotipos y todos los materiales visuales y escritos relacionados (por ejemplo, ERIEL).
+
+1.3 “Base de Datos de Voz” significa un conjunto de datos, modelos, archivos de configuración y materiales relacionados que permite a un motor de síntesis compatible generar una voz cantada o hablada, incluyendo cualquier base de datos basada en DiffSinger.
+
+1.4 “Herramienta” significa cualquier software, plugin, script, utilidad, plantilla o recurso publicado por OVER-LOUD que no sea un Personaje ni una Base de Datos de Voz.
+
+1.5 “Proveedor de Voz” significa la persona cuya voz fue grabada para crear una Base de Datos de Voz.
+
+1.6 “Resultado” significa el audio, video u otro contenido generado con una Base de Datos de Voz o Herramienta, como una canción, una pista vocal o un clip renderizado.
+
+1.7 “Obra Derivada” significa cualquier obra basada en un Personaje, como fan art, animación, un modelo, una historia o un juego, distinta de un Resultado.
+
+1.8 “Uso Comercial” significa cualquier uso destinado a generar ingresos u otro beneficio económico directo, incluyendo vender o monetizar Resultados, publicarlos en plataformas de streaming o video con monetización activada, o usarlos en producciones de pago, publicidad, juegos, aplicaciones o servicios.
+
+1.9 “Uso No Comercial” significa cualquier uso que no sea Uso Comercial.
+
+1.10 “Tú” significa la persona u organización que acepta este acuerdo. Si lo aceptas en nombre de una organización, confirmas que tienes autoridad para obligarla.
+
+1.11 “Entrenamiento de IA” significa usar cualquier material para entrenar, ajustar (fine-tuning), destilar, evaluar con fines de replicación o de cualquier otro modo construir un modelo de aprendizaje automático, incluyendo clonación de voz, conversión de voz, texto a voz y modelos generativos de audio o imagen.
+
+2. Propiedad y derechos reservados
+
+2.1 OVER-LOUD (y, cuando corresponda, sus licenciantes) es titular de todos los derechos, títulos e intereses sobre cada Producto, incluyendo derechos de autor, marca, diseño y derechos relacionados. Los Productos se licencian, no se venden.
+
+2.2 El Proveedor de Voz conserva sus derechos de personalidad y de voz. Nada en este acuerdo transfiere ni cede a ti ningún derecho sobre la voz real o la identidad del Proveedor de Voz.
+
+2.3 Todos los derechos no otorgados expresamente quedan reservados. Nada en este acuerdo te concede derecho alguno a usar el nombre, los logotipos o las marcas de OVER-LOUD, salvo lo aquí indicado.
+
+2.4 Tú eres dueño de tu Resultado. Entre tú y OVER-LOUD, tú eres titular de las composiciones, letras, arreglos y grabaciones que crees. OVER-LOUD no reclama la propiedad de tu música. Sin embargo, la voz subyacente, la Base de Datos de Voz y el Personaje siguen siendo nuestros, y tu propiedad no te permite extraerlos, aislarlos ni redistribuirlos.
+
+3. Alcance de uso
+
+Salvo que la página del producto o el archivo de licencia indique lo contrario, una licencia cubre tanto el uso personal como el comercial del Resultado, según se describe en la parte de este acuerdo que se aplique al Producto. Cada licencia es para un solo usuario.
+
+Algunos usos requieren un acuerdo escrito aparte con OVER-LOUD, como el uso en tiempo real o interactivo, las producciones a gran escala y el merchandising. Si no estás seguro de si tu uso está cubierto, escribe a inquiry@over-loud.com antes de usar el Producto.
+
+4. Concesión general
+
+4.1 Sujeto a estos términos, OVER-LOUD te concede una licencia no exclusiva y de alcance mundial para usar el Producto con los fines permitidos por la parte específica de este acuerdo que se aplique a ese Producto.
+
+5. Conducta prohibida (todos los Productos)
+
+No puedes, ni puedes permitir que otra persona:
+
+• Redistribuir, compartir, revender, alquilar, arrendar, prestar, subir, replicar (mirror) o de cualquier otro modo poner a disposición de terceros un Producto o cualquier parte de él, ya sea gratis o de pago, salvo donde una parte de este acuerdo lo permita expresamente.
+
+• Aplicar ingeniería inversa, descompilar, descifrar, extraer, convertir o reempaquetar un Producto, o cualquier dato contenido en él. La ingeniería inversa incluye ver los modelos para examinar sus gráficos internos de modo que puedan usarse para otra implementación, emulación o recreación. Esto incluye, entre otros, los parámetros reelaborados de OVER-LOUD, los parámetros nuevos, las modificaciones del proceso del modelo o cualquier implementación futura.
+
+• Eliminar o alterar avisos de derechos de autor, créditos, marcas de agua o información de licencia.
+
+• Usar un Producto para Entrenamiento de IA, o usar un Resultado como material de entrenamiento o de referencia para cualquier modelo cuyo propósito sea reproducir, imitar o reemplazar la voz o el Personaje de un Producto. Esto incluye la conversión de voz y la clonación de la Base de Datos de Voz o de su Resultado.
+
+• Alojar un Producto en cualquier plataforma de terceros no autorizada. Si deseas hacerlo, escríbenos a inquiry@over-loud.com
+
+• Usar un Producto para suplantar a cualquier persona real, para crear audio o video engañoso (“deepfakes”), o para hacer parecer que una persona real dijo o cantó algo que no dijo ni cantó.
+
+• Usar un Producto para crear contenido ilegal, difamatorio, acosador, de odio o discriminatorio, que promueva la violencia, el terrorismo o la autolesión, que explote o sexualice a menores de cualquier forma, o que infrinja derechos de otros.
+
+• Usar un Producto de una manera que sugiera que OVER-LOUD, un Personaje o el Proveedor de Voz te respalda, patrocina o está afiliado contigo, con un partido político, un candidato, una religión, una causa o un producto, salvo que lo hayamos acordado por escrito.
+
+• Usar un Producto en relación con criptomonedas, NFT, apuestas o esquemas similares.
+
+• Afirmar que un Producto es obra tuya o que tú creaste la Base de Datos de Voz, el Personaje o la voz.
+
+OVER-LOUD puede actualizar esta lista en una nueva versión del acuerdo. La versión publicada cuando obtuviste el Producto sigue aplicándose a ese Producto, salvo que el cambio sea necesario para cumplir la ley o proteger al Proveedor de Voz.
+
+6. Crédito
+
+6.1 Cuando publiques un Resultado públicamente, debes acreditar el Producto en un lugar razonable y visible, como la descripción, el título, los créditos o las notas de la pista. El formato recomendado es:
+
+    Vocals: [Nombre del Personaje] (from OVER-LOUD)
+
+6.2 No necesitas acreditar el Producto en uso privado o interno.
+
+6.3 El crédito es obligatorio cuando publicas un Resultado públicamente, salvo que acordemos otra cosa por escrito.
+
+7. Protección del Proveedor de Voz
+
+7.1 OVER-LOUD puede restringir, suspender o terminar de inmediato tu uso de un Producto si tu uso daña la reputación, seguridad, privacidad o dignidad del Proveedor de Voz, o si se utiliza para acosar, suplantar o atacar a esa persona o a cualquier otra.
+
+7.2 No puedes intentar identificar, contactar ni acosar al Proveedor de Voz si ha elegido permanecer en el anonimato.
+
+7.3 No puedes presentar un Resultado como la voz real del Proveedor de Voz en ningún contexto donde esto pueda inducir a error a las personas.
+
+8. Actualizaciones y soporte
+
+Podemos publicar actualizaciones, correcciones o nuevas versiones, pero no estamos obligados a hacerlo. El soporte se ofrece en la medida de lo posible a través de inquiry@over-loud.com. Podemos dejar de dar soporte a un Producto en cualquier momento.
+
+9. Vigencia y terminación
+
+9.1 Este acuerdo dura hasta que se termine.
+
+9.2 Termina automáticamente si lo incumples. OVER-LOUD también puede terminarlo mediante aviso escrito si lo incumples y, cuando el incumplimiento pueda subsanarse, no lo subsanas dentro de [7] días desde nuestro aviso.
+
+9.3 Puedes terminarlo en cualquier momento eliminando el Producto y todas sus copias.
+
+9.4 Cuando el acuerdo termine, debes dejar de usar el Producto y eliminar todas las copias. El Resultado que ya hayas publicado o entregado bajo una licencia válida sigue siendo válido, salvo que la terminación se deba a contenido que infrinja la Sección 5 o la Sección 7, en cuyo caso podemos exigirte que lo retires.
+
+9.5 Las Secciones 2, 5, 7, 10, 11 y 12 siguen vigentes tras la terminación.
+
+10. Exención de garantías
+
+LOS PRODUCTOS SE PROPORCIONAN “TAL CUAL” Y “SEGÚN DISPONIBILIDAD”. EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY, OVER-LOUD RECHAZA TODA GARANTÍA, EXPRESA O IMPLÍCITA, INCLUYENDO COMERCIABILIDAD, IDONEIDAD PARA UN FIN PARTICULAR, NO INFRACCIÓN, CALIDAD, EXACTITUD Y FUNCIONAMIENTO ININTERRUMPIDO O LIBRE DE ERRORES. La síntesis de voz puede producir resultados inesperados o imperfectos, y eres responsable de revisar tu Resultado antes de publicarlo.
+
+11. Limitación de responsabilidad
+
+EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY, OVER-LOUD Y SUS MIEMBROS, PERSONAL, PROVEEDORES DE VOZ Y COLABORADORES NO SERÁN RESPONSABLES DE NINGÚN DAÑO INDIRECTO, INCIDENTAL, ESPECIAL, CONSECUENTE O PUNITIVO, NI DE LA PÉRDIDA DE BENEFICIOS, INGRESOS, DATOS O REPUTACIÓN, QUE SURJA DE LOS PRODUCTOS O DE ESTE ACUERDO O ESTÉ RELACIONADO CON ELLOS. COMO LOS PRODUCTOS SE PROPORCIONAN SIN COSTO, NUESTRA RESPONSABILIDAD TOTAL POR CUALQUIER RECLAMACIÓN NO EXCEDERÁ DE USD 0. Algunas jurisdicciones no permiten estos límites, por lo que se aplican solo en la medida en que la ley lo permita.
+
+11A. Indemnización
+
+Aceptas defender y mantener indemne a OVER-LOUD, a sus miembros y al Proveedor de Voz frente a reclamaciones, daños y costos (incluyendo honorarios legales razonables) derivados de tu Resultado, tus Obras Derivadas o tu incumplimiento de este acuerdo.
+
+12. Cumplimiento y retiros de contenido
+
+Podemos solicitar a las plataformas que retiren contenido que infrinja este acuerdo, incluso mediante procedimientos de retiro por derechos de autor y marcas. Reporta presuntas infracciones a inquiry@over-loud.com.
+
+13. Disposiciones generales
+
+13.1 Cambios. Podemos actualizar este acuerdo. Las nuevas versiones se aplican a los Productos que obtengas después de la actualización y a tu uso continuado de las actualizaciones. Publicaremos el número de versión y la fecha en nuestro sitio web.
+
+13.2 Acuerdo completo. Este acuerdo, junto con cualquier acuerdo escrito firmado con OVER-LOUD, constituye el acuerdo íntegro sobre los Productos.
+
+13.3 Divisibilidad. Si una cláusula no es exigible, el resto sigue en vigor.
+
+13.4 No renuncia. No hacer valer un derecho no implica renunciar a él.
+
+13.5 Cesión. No puedes ceder este acuerdo. OVER-LOUD puede cederlo en relación con una reorganización, una venta del negocio o un cambio en la titularidad del proyecto.
+
+13.6 Idioma. La versión en inglés prevalece sobre cualquier traducción.
+
+============================================================
+PARTE 2 · LICENCIA DE PERSONAJES
+============================================================
+
+Esta parte se aplica a todos los Personajes de OVER-LOUD, incluyendo su nombre, diseños, ilustraciones, personalidad e historia.
+
+2.1 Lo que puedes hacer
+
+Puedes, sin costo y sin pedir permiso:
+
+• Crear y compartir obras de fans como ilustraciones, cómics, animaciones, modelos 3D, cosplay, historias, covers y videos, como Uso No Comercial.
+
+• Usar el Personaje en música hecha con una Base de Datos de Voz oficial de ese Personaje, dentro de los términos de la Parte 3.
+
+• Publicar obras de fans en redes sociales y plataformas creativas, con el crédito indicado en 2.4.
+
+• Recibir propinas, donaciones o apoyo voluntario de plataformas relacionados con tus obras de fans, siempre que el Personaje no se venda como producto (por ejemplo, sin “contenido exclusivo del Personaje” tras un muro de pago).
+
+Obras de fans para adultos. Puedes crear obras de fans de contenido adulto del Personaje, incluyendo arte e historias sugerentes o NSFW, siempre que el Personaje se represente claramente como adulto, la obra esté etiquetada como contenido para adultos y se mantenga en espacios con restricción de edad o tras los filtros de contenido de la plataforma, y no sugiera que OVER-LOUD la hizo o la aprueba.
+
+2.2 Lo que requiere permiso por escrito
+
+Debes obtener el permiso escrito de OVER-LOUD antes de:
+
+• Vender o distribuir merchandising (impresos, ropa, stickers, figuras, peluches, accesorios, libros o cualquier bien físico o digital) con el Personaje.
+
+• Usar el Personaje en juegos comerciales, aplicaciones, anime, películas, series, publicidad, alianzas con marcas o comisiones pagadas donde el Personaje sea el producto principal.
+
+• Usar el Personaje como avatar para streaming, VTubing o un servicio de persona virtual que monetices o que represente a una empresa.
+
+• Usar el nombre, logotipo o imagen del Personaje como marca o nombre comercial.
+
+• Crear un producto de apariencia oficial que pueda confundirse con uno publicado por OVER-LOUD.
+
+Revisaremos las solicitudes de buena fe. Escribe a inquiry@over-loud.com con una descripción, el uso, el público y los ingresos previstos.
+
+2.3 Lo que no puedes hacer
+
+No puedes:
+
+• Representar al Personaje en contenido de odio o discriminatorio, en contenido sexual no consentido, ni de forma sexual o sexualizada como menor de edad o con rasgos infantiles. Esta última regla no tiene excepciones.
+
+• Representar al Personaje de una manera que se burle, difame o dañe al Proveedor de Voz, a OVER-LOUD o a sus miembros.
+
+• Usar al Personaje para promover partidos políticos, candidatos, grupos religiosos, grupos de odio o movimientos.
+
+• Afirmar que creaste al Personaje, que el Personaje es tuyo o que tu obra es canon, salvo que OVER-LOUD lo indique.
+
+• Usar los diseños o la historia del Personaje como datos de Entrenamiento de IA, y no puedes publicar arte del Personaje generado por un modelo de IA que haya sido entrenado o ajustado con materiales del Personaje de OVER-LOUD u obras de fans del Personaje sin el consentimiento de los artistas involucrados.
+
+• Revender o redistribuir las ilustraciones oficiales, hojas de referencia o materiales de prensa de OVER-LOUD, excepto para obras de fans no comerciales que usen claramente tu propia ilustración.
+
+• Crear o vender NFT o tokens basados en el Personaje.
+
+2.4 Crédito para obras de fans
+
+Cuando sea posible, acredita al Personaje como: “[Nombre del Personaje] © OVER-LOUD” o simplemente por su nombre oficial y un enlace a over-loud.com. Este crédito es opcional en publicaciones casuales en redes, pero se recomienda.
+
+2.5 Diseño oficial y canon
+
+2.5.1 Las interpretaciones de los fans son bienvenidas, pero OVER-LOUD decide qué es oficial. Las obras de fans no son canon a menos que las publiquemos como tal.
+
+2.5.2 No puedes publicar rediseños oficiales ni afirmar que un diseño es la “nueva versión oficial”.
+
+2.5.3 Otorgas a OVER-LOUD una licencia no exclusiva, mundial y libre de regalías para compartir, republicar y mostrar tus obras de fans en nuestros canales oficiales, con crédito para ti. Las retiraremos si lo pides. Nunca usaremos tu obra en un producto comercial sin tu permiso.
+
+2.6 Marcas
+
+Los nombres de los Personajes, los logotipos y el nombre OVER-LOUD pueden ser marcas registradas o no registradas. Esta licencia no te otorga ningún derecho de marca.
+
+============================================================
+PARTE 3 · LICENCIA DE BASES DE DATOS DE VOZ
+============================================================
+
+Esta parte se aplica a todas las Bases de Datos de Voz de OVER-LOUD, incluyendo las basadas en DiffSinger como ERIEL.
+
+3.1 Concesión
+
+Sujeto a la Parte 1, OVER-LOUD te concede una licencia no exclusiva e intransferible para instalar la Base de Datos de Voz en tus dispositivos y usarla con un motor de síntesis compatible para generar Resultados.
+
+3.2 Usos permitidos
+
+Puedes crear y compartir Resultados, incluyendo canciones, covers y videos, y usarlos comercialmente, incluyendo:
+
+• Publicar canciones en plataformas de streaming y venderlas, de forma física o digital.
+
+• Monetizar videos y transmisiones que contengan Resultados.
+
+• Usar Resultados en comisiones pagadas, proyectos de clientes y música de fondo.
+
+• Presentar Resultados en eventos en vivo, usando audio pregrabado.
+
+Uso extendido. Los usos más allá de estos, como producciones de gran presupuesto, sistemas dentro de juegos, instalaciones interactivas o integraciones personalizadas, requieren un acuerdo escrito aparte con OVER-LOUD.
+
+3.3 Lo que no está permitido
+
+Además de la Sección 5 de la Parte 1, no puedes:
+
+• Extraer, aislar, samplear, resintetizar o distribuir los datos en bruto o derivados de la Base de Datos de Voz, incluyendo modelos, embeddings, datos del vocoder, configuración o cualquier audio interno.
+
+• Empaquetar Resultados como pack de samples, librería de sonidos, kit de loops o colección libre de regalías, ni como conjunto de datos para que otros lo usen.
+
+• Ejecutar conversión de voz o cualquier otro modelo sobre la Base de Datos o su Resultado para producir una voz similar, o una voz diferente entrenada con esta.
+
+• Intercambiar componentes de los modelos de OVER-LOUD, como, entre otros, Variance, Timing y Acoustic, por modelos que no sean de OVER-LOUD. En cumplimiento de los términos originales de PC-NSFHiFiGAN publicados por OpenVPI, solo podemos pedirte que no uses nuestros pesos ajustados (fine-tuned) con modelos que no sean de OVER-LOUD.
+
+• Usar la Base de Datos en sistemas en tiempo real o interactivos (como chatbots, asistentes, atención al cliente, juegos interactivos con canto generado por jugadores, bots de streaming o servicios de texto a voz para el público) sin una licencia escrita aparte.
+
+• Crear una Base de Datos de Voz combinada, mezclada o derivada (incluyendo fusiones de modelos, versiones ajustadas o mezclas de voces), distribuirla y usarla públicamente, sin el permiso escrito de OVER-LOUD. Los experimentos privados y no distribuidos para tu propia música están permitidos.
+
+• Usar la Base de Datos para producir contenido que difunda desinformación o que busque engañar a las personas sobre quién habla o canta.
+
+• Ofrecer la Base de Datos como parte de un servicio, de pago o gratuito, como un servicio de renderizado en la nube, donde los usuarios puedan generar Resultados sin tener una licencia propia.
+
+3.4 Derechos sobre el Resultado y nuestra promesa
+
+3.4.1 Conservas los derechos sobre tus composiciones y grabaciones originales.
+
+3.4.2 OVER-LOUD no reclamará regalías sobre tu Resultado y no presentará reclamaciones contra contenido que hayas creado legalmente dentro de esta licencia.
+
+3.5 Motor y componentes de terceros
+
+Las Bases de Datos de Voz requieren un motor compatible (por ejemplo, software compatible con DiffSinger como OpenUtau). Los motores y componentes de terceros se licencian por separado por sus respectivos titulares, y eres responsable de cumplir sus términos. OVER-LOUD no es responsable de los motores.
+
+3.6 Uso responsable de la voz
+
+Te pedimos que trates la voz con respeto. El Resultado no debe presentarse como una persona real, como un Personaje diferente, ni de maneras que deshonren al Proveedor de Voz.
+
+3.7 Sin redistribución
+
+No puedes alojar, volver a subir ni redistribuir de ningún modo una Base de Datos de Voz de OVER-LOUD. En su lugar, comparte un enlace a la página oficial de descarga en over-loud.com.
+
+============================================================
+PARTE 4 · LICENCIA DE HERRAMIENTAS
+============================================================
+
+Esta parte se aplica a todas las Herramientas de OVER-LOUD, como plugins, scripts, archivos de configuración, plantillas, dependencias y utilidades.
+
+4.1 Concesión
+
+Sujeto a la Parte 1, OVER-LOUD te concede una licencia no exclusiva e intransferible para instalar y usar la Herramienta en tus propios proyectos, incluyendo proyectos comerciales, salvo que la página de la Herramienta indique otra cosa.
+
+4.2 Restricciones
+
+No puedes:
+
+• Redistribuir, vender o sublicenciar la Herramienta ni versiones modificadas de ella.
+
+• Eliminar avisos de licencia o presentar la Herramienta como propia.
+
+• Usar la Herramienta para eludir protecciones de otro software, crear malware, o acceder a sistemas o datos sin autorización.
+
+• Usar la Herramienta para producir o distribuir contenido infractor, filtrado o pirata.
+
+4.3 Modificaciones
+
+Puedes modificar la Herramienta para tu uso privado, pero no puedes distribuir versiones modificadas.
+
+4.4 Compatibilidad y seguridad
+
+Las Herramientas pueden modificar archivos y ajustes en otro software. Eres responsable de hacer copias de seguridad. OVER-LOUD no es responsable de la pérdida de datos ni de la incompatibilidad con otro software.
+
+Consultas o solicitudes de permiso: inquiry@over-loud.com
+
+© 2026 OVER-LOUD. Todos los derechos reservados.
 </script>
 
   <script src="js/i18n.js"></script>
