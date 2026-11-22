@@ -2,8 +2,8 @@ const PROJECT_LIST = typeof PROJECTS !== "undefined" ? PROJECTS : (console.warn(
 const NEWS_LIST = typeof NEWS !== "undefined" ? NEWS : (console.warn("js/posts.js was not loaded"), []);
 
 const TEAM = [
-  { name: "Tomo",   role: "Creator, character designer and developer.", role_es: "Creación, diseño de personajes y desarrollo.", photo: "assets/tomo_team_picture.jpg",   x: "https://x.com/ci_tomo0o" },
-  { name: "Lili",   role: "Developer and co-creator.", role_es: "Desarrollo y co-creación.",                  photo: "assets/lili_team_picture.jpg",   x: "https://x.com/liliquisha" },
+  { name: "Tomo",   role: "Creator, character designer and developer.", role_es: "Creador, diseño de personajes y desarrollo.", photo: "assets/tomo_team_picture.jpg",   x: "https://x.com/ci_tomo0o" },
+  { name: "Lili",   role: "Developer and co-creator.", role_es: "Desarrollo y co-creador.",                  photo: "assets/lili_team_picture.jpg",   x: "https://x.com/liliquisha" },
   { name: "Owen",   role: "Tools developer", role_es: "Desarrollo de herramientas.",                            photo: "assets/owen_team_picture.jpg",   x: "https://x.com/itowenmatcha" },
   { name: "Rampie", role: "General development assistant.", role_es: "Asistencia general de desarrollo.",             photo: "assets/rampie_team_picture.jpg", x: "https://x.com/Rampieeeee" },
   { name: "Cam",   role: "Character designer.", role_es: "Diseño de personajes.",                        photo: "assets/cam_team_picture.jpg",                            x: null },
