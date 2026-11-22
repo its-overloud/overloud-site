@@ -73,7 +73,7 @@ const I18N = {
     aboutImgAlt: "un personaje de OVER-LOUD",
     aboutTitle: 'Sobre <span class="nw">OVER-LOUD</span>',
     aboutLead: "OVER-LOUD es un círculo de síntesis vocal integrado por diversos talentos que comparten una pasión por el desarrollo técnico.",
-    aboutP2: "Nuestro foco es proveer a la comunidad de vocalistas y más, con los últimos métodos e ideas. Dando vida y creatividad en todo lo que hacemos.",
+    aboutP2: "Trabajamos en vocalistas virtuales, herramientas y en lo último en investigación sobre síntesis vocal para dar vida a nuestra pasión.",
 
     projectsNav: "Navegación de proyectos", prevProjects: "Proyectos anteriores", nextProjects: "Proyectos siguientes", projectsTrack: "Proyectos",
     newsNav: "Navegación del blog", prevNews: "Entradas anteriores", nextNews: "Entradas siguientes", newsTrack: "Blog",
