@@ -20,7 +20,7 @@ const I18N = {
     contactMailto: "Email us directly instead",
     openMenu: "Open menu", closeMenu: "Close menu",
 
-    aboutImgAlt: "Miri, an OVER-LOUD character",
+    aboutImgAlt: "an OVER-LOUD character",
     aboutTitle: 'About <span class="nw">OVER-LOUD</span>',
     aboutLead: "OVER-LOUD is a group of vsynth creators brought together by a shared love of technical development.",
     aboutP2: "We work on singer models, tools, and cutting-edge vocal synthesis research, to bring our passion to life.",
@@ -70,11 +70,10 @@ const I18N = {
     contactMailto: "Escríbenos directamente por correo",
     openMenu: "Abrir menú", closeMenu: "Cerrar menú",
 
-    aboutImgAlt: "Miri, un personaje de OVER-LOUD",
+    aboutImgAlt: "un personaje de OVER-LOUD",
     aboutTitle: 'Sobre <span class="nw">OVER-LOUD</span>',
-    aboutLead: "OVER-LOUD es un círculo de síntesis de voz dedicado a proyectos originales, con voicebanks, personajes y herramientas propios, creados con auténtica pasión.",
-    aboutP2: "Cada detalle fue trabajado con calma, cada personaje fue moldeado con intención, y nada sale de nuestras manos hasta que se gana su lugar. Creemos que una voz sintetizada merece la misma paciencia implacable y el mismo cuidado que cualquier otro arte.",
-    aboutGoal: "Nuestro objetivo: voces naturales que transmiten presencia y dan a los creadores nuevas formas de llevar sus ideas al mundo.",
+    aboutLead: "OVER-LOUD es un circulo de síntesis vocal compuesto de varios talentos agrupados.",
+    aboutP2: "Nuestro foco es proveer a la comunidad de vocalistas y más, con los últimos métodos e ideas. Dando vida y creatividad en todo lo que hacemos.",
 
     projectsNav: "Navegación de proyectos", prevProjects: "Proyectos anteriores", nextProjects: "Proyectos siguientes", projectsTrack: "Proyectos",
     newsNav: "Navegación del blog", prevNews: "Entradas anteriores", nextNews: "Entradas siguientes", newsTrack: "Blog",
