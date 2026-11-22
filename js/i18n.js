@@ -22,9 +22,8 @@ const I18N = {
 
     aboutImgAlt: "Miri, an OVER-LOUD character",
     aboutTitle: 'About <span class="nw">OVER-LOUD</span>',
-    aboutLead: "OVER-LOUD is a voice synthesis circle devoted to original projects, our own voicebanks, characters, and tools, crafted with genuine passion.",
-    aboutP2: "Every detail was lingered over, every character shaped with intention, and nothing leaves our hands until it earns its place. A synthesized voice, we believe, deserves the same terrible patience and care as any other art.",
-    aboutGoal: "Our aim: Natural voices that carry a presence and give creators new ways to bring their ideas into the world.",
+    aboutLead: "OVER-LOUD is a group of vsynth creators brought together by a shared love of technical development.",
+    aboutP2: "We work on singer models, tools, and cutting-edge vocal synthesis research, to bring our passion to life.",
 
     projectsNav: "Projects navigation", prevProjects: "Previous projects", nextProjects: "Next projects", projectsTrack: "Projects",
     newsNav: "Blog navigation", prevNews: "Previous posts", nextNews: "Next posts", newsTrack: "Blog",
